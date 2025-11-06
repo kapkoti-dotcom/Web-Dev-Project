@@ -1,67 +1,41 @@
 <!DOCTYPE html>
-<!--hello i am a comment-->
 <html>
-
-<head>
- <link rel="stylesheet"type="text/css"href="style.css">
-    <meta charset="utf-8" />
-   <meta name="viewport"content="widthdevice-width,initial-scale=1.0"/>
-    <title>Cafe Menu</title>
-</head>
-
-<body>
-  <div class="menu">
-     <header>
-      <h1>CAMPER CAFE</h1>
-      <p class="established">Est.2020</p>
-  </header>
-    <hr>
-  <main>
-    <section>
-      <h2>Coffee</h2>
-      <article class="items">
-        <p class="flavor">French vanilla</p>
-        <p class="price">3.00</p>
-        </article>
-      <article class="items">
-        <p class="flavor">Caramel Macchiato</p>
-        <p class="price">3.76</p>
-        </article>
-      <article class="items">
-        <p class="flavor">Pumpkin spice</p>
-        <p class="price">4.00</p>
-        </article>
-       <article class="items">
-        <p class="flavor">Cappchino</p>
-        <p class="price">4.56</p>
-        </article>
-      
-    </section>
-    <section>
-      <h2>Deserts</h2>
-      <article class="items">
-         <p class="deserts">Donut</p><p class="price">1.50</p
-        </article>
-        <article class="items">
-         <p class="deserts">Cherry pie</p><p class="price">2.75</p
-          </article>
-          <article class="items">
-         <p class="deserts">cheese cake </p><p class="price">3.50</p
-            </article>
-            <article class="items">
-         <p class="deserts">Cinamom roll</p><p class="price">1.50</p>
-      </article>
-    </section>
-  </main>
-  <hr class="bottom-line">        
-  <footer>
-    <p><a href="https://www.freecodecamp.org">visit our website</p>
-      <p>123 Free Code Camp Drive</p>
-    
-          </footer>
-  
- 
-  </body>
-    </html>
-  
-  
+  <head>
+    <title>REGESTRATION FORM</title>
+    <link rel="stylesheet"type="text/css"href="style.css"/>
+    <body>
+      <h1>Regestration Form</h1>
+      <p>please fill out this form with the required information</p>
+      <form action="https://register-demo.freecodecamp.org">
+        <fieldset class="field1">
+          <label> Enter your First Name: <input type="text" required/></label>
+          <label>Enter your Last Name:<input type="text"required/></label>
+          <label> Enter your Email: <input type="email"required/></label>
+          <label>Create a New Password: <input type="password" pattern="[a-z]{8,}" required/></label>
+        </fieldset>
+         <fieldset class="field2">
+           <label><input class ="inline"type="radio" name="account-type"/> Personal Account</label>
+           <label><input class="inline" type="radio"name="account-type"/>Business Account</label>
+           <label><input  class="inline" type="checkbox" name="terms"required/>i accept the term and condition</label>
+        </fieldset>
+        <fieldset > <label>upload a profile picture!<input type="file"name="profile"/></label>
+          <label> input your age(years):<input type="number"min="13"max="120"/></label>
+          <label> how did you hear about us ?
+          <select>
+            <option value="">(Select one)</option>
+            <option value="1">freeCode camp News</option>
+            <option value="2">freecodecamp you tube channel</option>
+            <option value="3">freecodecamp forum</option>
+            <option value="4">other</option>
+          </select>
+          </label>
+          <label>provide a bio:<textarea name="bio" rows="3"cols="30"placeholder="i like coding on the beech"></textarea></label>
+        </fieldset>
+          
+        <input type="submit"value="submit"/>
+        
+                    
+      </form>
+    </body>
+  </head>
+</html>
